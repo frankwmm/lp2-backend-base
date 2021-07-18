@@ -1,0 +1,28 @@
+<p>asignaturalista works!</p>
+<br>
+<div class="container">
+
+<button class="btn btn-primary"  click > Nuevo Asignatura</button>
+
+<table class="table">
+  <thead>
+  <tr>
+    <th scope="col">Id</th>
+    <th scope="col">Nme</th>
+    <th scope="col">Detail</th>
+    <th scope="col">Date Created</th>
+    <th scope="col">Date Updated</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let a of asignaturas">
+    <th scope="row">{{a.id}}</th>
+    <td>{{a.nombre}}</td>
+    <td>{{a.detalle}}</td>
+    <td>{{a.created_at}}</td>
+    <td>{{a.updated_at}}</td>
+  </tr>
+
+  </tbody>
+</table>
+</div>
